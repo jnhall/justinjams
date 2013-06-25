@@ -1,13 +1,13 @@
 {
   "name": "justinjams",
   "version": "0.0.1",
-  "description": "Practicing AngularJS+Heroku"
+  "description": "Practicing AngularJS+Heroku",
   "main": "web.js",
   "dependencies": {
     "node-static": "~0.6.5",
     "mongodb": "1.1.11"
   },
-  "sripts": {
+  "scripts": {
    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
