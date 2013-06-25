@@ -1,8 +1,14 @@
 {
-  "name": "node-example",
+  "name": "justinjams",
   "version": "0.0.1",
+  "description": "Practicing AngularJS+Heroku"
+  "main": "web.js",
   "dependencies": {
-    "express": "3.1.x"
+    "node-static": "~0.6.5",
+    "mongodb": "1.1.11"
+  },
+  "sripts": {
+   "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": "0.10.x",
