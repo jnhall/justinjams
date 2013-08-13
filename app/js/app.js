@@ -1,10 +1,14 @@
-'use strict';
+var app = angular.module('myApp', []);
 
-
-// Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
-  config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-    $routeProvider.otherwise({redirectTo: '/view1'});
-  }]);
+angular.module('myApp')
+  .controller('MyCtrl', function ($scope, $timeout) {
+  	var i = 0;
+  	// var fader = function() {
+  	// 	$timeout(function() {
+  	// 		$scope.fade = '#'+((i+=1)%4368).toString(16);
+  	// 		console.log('#'+((i+=1)%4368).toString(16));
+  	// 		fader();
+  	// 	}, 1000);
+  	// };
+  	// fader();
+  });

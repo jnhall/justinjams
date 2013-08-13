@@ -2,27 +2,58 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
+  <title>Justin Jams</title>
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="css/app.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+  <div class="wrap container" ng-controller="MyCtrl">
+    <div class="rug">
+    </div>
+    <header>
+      <div class="inner">
+        <h1>
+          Welcome to<br />
+          <div id="brand">
+            <div class="inner">
+              <span class="justin">Justin</span><br />
+              <span class="jams">Jams</span><br />
+            </div>
+          </div>
+        </h1>
+      </div>
+    </header>
+    <div id="reel">
+      <h2>My name is Justin</h2>
+      <div>
+        <img id="me" alt="Yo!" src="img/profile.png" />
+      </div>
+      <p>
+        I'm a front end web engineer and application developer. I love making video games and art and things that work like magic.
+      </p>
+      <p>
+        <i class="icon-magic br-icon"></i>
+      </p>
+      <p>
+        I live on code, coffee, and cartoons.
+      </p>
+      <p>
+        <i class="icon-coffee br-icon"></i>
+      </p>
+      <p>
+        I'm available for freelance work or along with the rest of <a href="http://www.neatfactory.com">Neat Factory</a> for larger or more design intensive projects. 
+      </p>
 
-  <div ng-view></div>
+    </div>
 
-  <div>Angular seed app: v<span app-version></span></div>
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+  </div>
 </body>
 </html>
