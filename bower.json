@@ -1,0 +1,12 @@
+{
+  "name": "justinjams",
+  "version": "0.0.0",
+  "main": "app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -15,9 +15,32 @@ h1, h2 {
 	text-align: center;
 }
 
+h1 {
+	margin-bottom: 0;
+	text-shadow: 0px 0px 2px rgba(255,0,0,0.4);
+}
+
+h2.myName {
+	padding-top: 40px;
+}
+
 h2 {
 	letter-spacing: 2px;
-	padding-top: 12px;
+	text-shadow: 0px 0px 2px rgba(255,0,0,0.4)
+}
+
+.navbar {
+width: 284px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+box-shadow: inset 0px 10px 13px -10px rgba(0,0,0,0.9);
+min-height: 0;
+font-size: 12px;
+}
+
+.navbar-nav>li>a  {
+	padding: 5px 17px;
 }
 
 .justin, .jams {
@@ -37,7 +60,7 @@ line-height: 80px;
 }
 
 #me {
-width: 300px;
+width: 276px;
 border: 1px solid MediumSpringGreen;
 border-radius: 100%;
 margin: 23px auto 25px;
@@ -65,8 +88,16 @@ box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
 
 #reel {
 width: 300px;
-margin: 196px auto 0 auto;
+margin: 198px auto 0 auto;
 background-image: url('../img/subtle_dots.png');
+}
+
+.reelEffect {
+	box-shadow: inset 0px 7px 49px -15px rgba(0,0,0,0.2);
+	width: 300px;
+	height: 1000px;
+	margin: -30px auto 0 auto;
+	position:fixed;
 }
 
 .rug {
@@ -74,12 +105,14 @@ background-image: url('../img/subtle_dots.png');
 	position: fixed;
 	background: white;
 	height: 44px;
+	z-index: 1;
 }
 
 header {
 position: fixed;
 left: 0;
 right: 0;
+z-index: 1;
 }
 
 header > .inner {
@@ -92,11 +125,21 @@ text-align: center;
 color: #555;
 text-shadow: 1px 1px 1px mediumspringgreen, -1px -1px 1px mediumspringgreen, 0px 0px 6px #333;
 font-size: 24px;
-
 }
 /* Don't show shadows when selecting text */
 ::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
 ::selection { background: #5af; color: #fff; text-shadow: none; }
+
+i.icon-js {
+	font-size: 13px;
+	font-weight: 900;
+}
+
+i.icon-php {
+	font-style: italic;
+font-weight: 900;
+font-size: 15px;
+}
 
 p {
 margin: 0 10px 10px;
@@ -110,6 +153,140 @@ a {
 color: mediumspringgreen;
 font-weight: 900;
 }
+
 a:hover {
 color: mediumspringgreen;
 }
+
+#About, #Top, #Skills, #Contact {
+	margin-top: -230px;
+	float: left;
+}
+
+.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav a:hover{
+	background: none;
+	text-shadow: 0px 0px 2px rgba(255,0,0,0.4);
+}
+
+.navbar-nav>.active>a {
+	box-shadow: inset 0 9px 11px -8px rgba(255,0,0,0.4);
+}
+
+.navbar ul {
+	box-shadow: 0 2px 6px -2px #333;
+}
+
+.navbar {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+#tail {
+	height: 2000px;
+}
+
+.contact .item {
+	width: 200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.contact .item i {
+	display: inline-block;
+	width: 25px;
+}
+
+.contact .item a {
+	margin-left: 12px;
+}
+
+#reel a {
+	text-shadow: 0px 0px 2px #444;
+	position:relative;
+	z-index:0;
+}
+
+#reel a:hover {
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.icon-fighter-jet {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+color: #555;
+text-shadow: 1px 1px 1px mediumspringgreen, -1px -1px 1px mediumspringgreen, 0px 0px 6px #333;
+	font-size: 27px;
+display: inline-block;
+}
+
+#jetty {
+	margin-top: 140px;
+	text-align: center;
+}
+
+#gamePrompt b {
+	text-shadow: 0px 0px 2px rgba(255,0,0,0.4);
+}
+
+.bullet {
+	position: fixed;
+	/* Safari */
+	-webkit-transform: rotate(-45deg);
+	/* Firefox */
+	-moz-transform: rotate(-45deg);
+	/* IE */
+	-ms-transform: rotate(-45deg);
+	/* Opera */
+	-o-transform: rotate(-45deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);
+	color: #555;
+	text-shadow: 0px 0px 2px rgba(255,0,0,0.4);
+}
+
+  .navbar-brand {
+    float: left;
+    margin-right: 5px;
+    margin-left: -15px;
+  }
+  .navbar-nav {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    border-radius: 0;
+  }
+  .navbar-nav.pull-right {
+    float: right;
+    width: auto;
+  }
+  .navbar-toggle {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: none;
+  }
+  .nav-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  /* copied stuff to stop that collapse */
+
+  #congrats {
+  width: 100%;
+		text-align: center;
+  }

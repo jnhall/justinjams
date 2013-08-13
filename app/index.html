@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Justin Jams</title>
-  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css"/>
   <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 </head>
@@ -23,36 +22,98 @@
               <span class="jams">Jams</span><br />
             </div>
           </div>
-        </h1>
+        </h1> 
+        <div class="navbar">
+          <ul class="nav navbar-nav">
+            <li ng-class="viewing.Top"><a href="#Top" ng-click="scrollTo('Top')">Home</a></li>
+            <li ng-class="viewing.About"><a href="#About" ng-click="scrollTo('About')">About</a></li>
+            <li ng-class="viewing.Skills"><a href="#Skills" ng-click="scrollTo('Skills')">Skills</a></i>
+            <li ng-class="viewing.Contact"><a href="#Contact" ng-click="scrollTo('Contact')">Contact</a></li>
+          </ul>
+        </div>
       </div>
+      <div id="congrats"></div>
     </header>
+
     <div id="reel">
-      <h2>My name is Justin</h2>
-      <div>
+      <div class="reelEffect"></div>
+      <a id="Top"></a>
+      <h2 class="myName x">My name is Justin</h2>
+      <div class="x">
         <img id="me" alt="Yo!" src="img/profile.png" />
       </div>
-      <p>
+      <h2 class="x">About</h2>
+      <a id="About"></a>
+      <p class="x">
         I'm a front end web engineer and application developer. I love making video games and art and things that work like magic.
       </p>
-      <p>
-        <i class="icon-magic br-icon"></i>
+      <p class="x">
+        <i class="icon-magic br-icon x"></i>
       </p>
-      <p>
-        I live on code, coffee, and cartoons.
+      <p class="x">
+        I spend my days enjoying code, cartoons, and coffee.
       </p>
-      <p>
-        <i class="icon-coffee br-icon"></i>
+      <p class="x">
+        <i class="icon-coffee br-icon x"></i>
       </p>
-      <p>
-        I'm available for freelance work or along with the rest of <a href="http://www.neatfactory.com">Neat Factory</a> for larger or more design intensive projects. 
+      <h2 class="x">Skills</h2>
+      <a id="Skills"></a>
+      <p class="x">
+        My favorite language is JavaScript, especially when working with amazing tools like <a href="http://nodejs.org/">node.js</a>, <a href="http://threejs.org/">three.js</a>, <a href="http://angularjs.org/">AngularJS</a>, and <a href="http://www.meteor.com/">Meteor</a>.  
       </p>
-
+      <a id="Game"></a>
+      <p class="x">
+        <i class="icon-js br-icon x">{ js }</i>
+      </p>
+      <p class="x">
+        I adore using <a href="http://unity3d.com/">Unity</a> to develop games with <a href="http://supersoul.co/">Super Soul</a> and to participate in <a href="http://en.wikipedia.org/wiki/Game_jam">game jams</a>.
+      </p>
+      <p class="x">
+        <i class="icon-gamepad br-icon x"></i>
+      </p>
+      <p class="x">
+        I've also been known to build with PHP CMS frameworks like <a href="https://drupal.org/">Drupal</a>, <a href="http://wordpress.com/">Wordpress</a>, and <a href="https://www.pyrocms.com/">PyroCMS</a>.
+      </p>
+      <p class="x">
+        <i class="icon-php br-icon x">php</i>
+      </p>
+      <h2 class="x">Contact</h2>
+      <a id="Contact"></a>
+      <div class="contact">
+        <p class="x">
+          I'm available for freelance work or along with the rest of <a href="http://www.neatfactory.com">Neat Factory</a> for larger or more design intensive projects.
+        </p>
+        <p>
+          <i class="icon-comments br-icon x"></i>
+        </p>
+        <p class="item">
+          <i class="icon-envelope br-icon x"></i> <a class="x" href="mailto:justin@justinjams.com">justin@justinjams.com</a>
+        </p>
+        <p class="item">
+          <i class="icon-cogs br-icon x"></i><a class="x" href="http://www.neatfactory.com">neatfactory.com</a>
+        </p>
+        <p class="item">
+          <i class="icon-github-alt br-icon x"></i><a class="x" href="http://github.com/justinjams">github.com/justinjams</a>
+        </p>
+      </div>
+      <p>
+        <div id="jetty" ng-click="playGame()">
+          <i class="icon-fighter-jet">
+          </i>
+          <div id="gamePrompt">Now get in the ship<br />
+          and escape my sinister homepage!</div>
+        </div>
+      </p>
+      <div id="tail" infinite-scroll="liveFree()" infinite-scroll-distance="1"></div>
     </div>
 
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     -->
-    <script src="lib/angular/angular.js"></script>
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="components/jquery.smooth-scroll/jquery.smooth-scroll.min.js"></script>
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/ng-infinite-scroller/build/ng-infinite-scroll.min.js"></script>
     <script src="js/app.js"></script>
   </div>
 </body>
